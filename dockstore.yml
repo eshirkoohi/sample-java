@@ -27,13 +27,13 @@ database:
   driverClass: org.postgresql.Driver
 
   # the username
-  user: webservice
+  user: nanobox
 
   # the password
-  password: iAMs00perSecrEET
+  password: password
 
   # the JDBC URL
-  url: jdbc:postgresql://localhost:5432/webservice
+  url: jdbc:postgresql://172.17.0.3:5432/gonano
 
   # any properties specific to your JDBC driver:
   properties:
