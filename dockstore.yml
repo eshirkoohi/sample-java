@@ -27,13 +27,13 @@ database:
   driverClass: org.postgresql.Driver
 
   # the username
-  user: nanobox
+  user: POSTGRESQL1_USER
 
   # the password
-  password: password
+  password: POSTGRESQL1_PASS
 
   # the JDBC URL
-  url: jdbc:postgresql://172.17.0.3:5432/gonano
+  url: jdbc:postgresql://POSTGRESQL1_HOST:POSTGRESQL1_PORT/POSTGRESQL1_NAME
 
   # any properties specific to your JDBC driver:
   properties:

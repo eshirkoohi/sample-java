@@ -1,6 +1,9 @@
 build:
   java_runtime: sun-jdk8
-  before: 'ln -s /data/java/sun-8/lib /data/java/lib'
+  before:
+    - 'ln -s /data/java/sun-8/lib /data/java/lib'
+  interpolate_files:
+    - 'dockstore.yml'
 web1:
   exec: /data/java/sun-8/bin/java -jar dockstore-webservice/target/dockstore-webservice-*.jar server dockstore.yml
   ports:
